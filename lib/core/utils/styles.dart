@@ -42,6 +42,13 @@ abstract class Styles{
       fontWeight: FontWeight.normal
   );
 
+  static const textStyle30 = TextStyle(
+      color: Colors.white,
+      fontSize: 30,
+      fontFamily: 'font',
+      fontWeight: FontWeight.normal
+  );
+
 
 
 }
