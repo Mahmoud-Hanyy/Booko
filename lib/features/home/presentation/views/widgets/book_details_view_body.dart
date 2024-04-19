@@ -1,4 +1,5 @@
 import 'package:booko/core/utils/styles.dart';
+import 'package:booko/features/home/presentation/views/widgets/book_action.dart';
 import 'package:booko/features/home/presentation/views/widgets/book_details_view_body.dart';
 import 'package:booko/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:booko/features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
@@ -48,6 +49,17 @@ class BookDetailsViewBody extends StatelessWidget {
            ),
            const SizedBox(height: 37),
            const BookAction(),
+           const SizedBox(height: 50,),
+           Align(
+             alignment: Alignment.centerLeft,
+             child: Text('You can also like ',
+               style: Styles.textStyle14.copyWith(
+                 fontWeight: FontWeight.w600,
+               ),),
+           ),
+           const SizedBox(height: 16,),
+           const SimilarBookListView(),
+           const SizedBox(height: 40,),
          ],
       ),
     );
