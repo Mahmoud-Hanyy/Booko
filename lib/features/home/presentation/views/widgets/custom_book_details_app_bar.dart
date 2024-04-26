@@ -9,8 +9,7 @@ class CustomBookDetailsAppBar extends StatelessWidget {
       children: [
         IconButton(
           icon: const Icon(Icons.close),
-          onPressed: () {
-          },
+          onPressed: () {},
         ),
         const Spacer(),
         IconButton(

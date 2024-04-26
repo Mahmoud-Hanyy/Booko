@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const Booko());
 }
+
 class Booko extends StatelessWidget {
   const Booko({super.key});
 
@@ -20,4 +21,3 @@ class Booko extends StatelessWidget {
     );
   }
 }
-

@@ -28,17 +28,18 @@ class BookDetailsViewBody extends StatelessWidget {
                 const SizedBox(
                   height: 28,
                 ),
-                Text('The Good Egg',
-                  style: Styles.textStyle30.copyWith(
-                      fontWeight: FontWeight.bold
-                  ),
+                Text(
+                  'The Good Egg',
+                  style:
+                      Styles.textStyle30.copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
                   height: 6,
                 ),
                 Opacity(
                   opacity: 0.6,
-                  child: Text('Jory John ',
+                  child: Text(
+                    'Jory John ',
                     style: Styles.textStyle18.copyWith(
                       fontWeight: FontWeight.w100,
                       fontStyle: FontStyle.italic,
@@ -53,17 +54,26 @@ class BookDetailsViewBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 37),
                 const BookAction(),
-                const Expanded(child: SizedBox(height: 50,)),
+                const Expanded(
+                    child: SizedBox(
+                  height: 50,
+                )),
                 Align(
                   alignment: Alignment.centerLeft,
-                  child: Text('You can also like ',
+                  child: Text(
+                    'You can also like ',
                     style: Styles.textStyle14.copyWith(
                       fontWeight: FontWeight.w600,
-                    ),),
+                    ),
+                  ),
                 ),
-                const SizedBox(height: 16,),
+                const SizedBox(
+                  height: 16,
+                ),
                 const SimilarBookListView(),
-                const SizedBox(height: 40,),
+                const SizedBox(
+                  height: 40,
+                ),
               ],
             ),
           ),
@@ -72,7 +82,3 @@ class BookDetailsViewBody extends StatelessWidget {
     );
   }
 }
-
-
-
-

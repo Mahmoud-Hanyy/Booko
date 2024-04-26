@@ -5,11 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
-   const SplashViewBody({super.key});
+  const SplashViewBody({super.key});
 
   @override
   State<SplashViewBody> createState() => _SplashViewBodyState();
 }
+
 class _SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
@@ -45,7 +46,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
       ),
     );
   }
-  void initSlidingAnimation(){
+
+  void initSlidingAnimation() {
     animationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 1),
@@ -60,7 +62,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void navigateToHomeView() {
     Future.delayed(const Duration(seconds: 3), () {
       GoRouter.of(context).push(AppRouter.kHomeView);
-    }
-    );
+    });
   }
 }

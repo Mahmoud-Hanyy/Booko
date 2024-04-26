@@ -11,15 +11,15 @@ class BestSellerListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:(){
+      onTap: () {
         GoRouter.of(context).go(AppRouter.kBookDetailsView);
       },
       child: SizedBox(
         height: 125,
         child: Row(
-          children:[
+          children: [
             AspectRatio(
-              aspectRatio: 2.7/4,
+              aspectRatio: 2.7 / 4,
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -30,7 +30,9 @@ class BestSellerListViewItem extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(width: 30,),
+            const SizedBox(
+              width: 30,
+            ),
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -38,22 +40,29 @@ class BestSellerListViewItem extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
-                    child: const Text('The Good Egg',
+                    child: const Text(
+                      'The Good Egg',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: Styles.textStyle20,
                     ),
                   ),
-                  const SizedBox(height: 3,),
-                  Text('Jory John',
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  Text(
+                    'Jory John',
                     style: Styles.textStyle14.copyWith(
                       color: Colors.grey,
                     ),
                   ),
-                  const SizedBox(height: 5,),
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Row(
                     children: [
-                      Text('110.99 €',
+                      Text(
+                        '110.99 €',
                         style: Styles.textStyle20.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
